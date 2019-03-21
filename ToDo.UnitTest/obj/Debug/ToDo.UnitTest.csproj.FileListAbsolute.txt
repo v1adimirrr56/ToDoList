@@ -1,0 +1,17 @@
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\ToDo.UnitTest.dll
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\ToDo.UnitTest.pdb
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.csprojAssemblyReference.cache
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.csproj.CopyComplete
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.dll
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.pdb
