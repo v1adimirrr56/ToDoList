@@ -5,7 +5,7 @@ class ToDoMain extends React.Component {
     }
     render() {
         return <div className="toDoMain">
-                    <ToDoTable tableHeader={ToDoTask.header} fieldObject={ToDoTask.fieldObject} url={this.props.url} />
+                    <ToDoTable tableHeader={ToDoTask.header} fieldObject={ToDoTask.fieldObject} url={this.props.url} urlOneObj={this.props.urlOneObj} />
                     <PaginationBlock/>
                </div>
     }

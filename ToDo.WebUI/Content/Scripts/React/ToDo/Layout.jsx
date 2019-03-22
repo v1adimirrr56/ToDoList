@@ -12,7 +12,7 @@ class Menu extends React.Component {
         return <ul className="menu">
             <li className="menu__item"><a href="/todo">Список задач</a></li>
             <li className="menu__item"><a href="/todo">Задачи с истекающим сроком</a></li>
-            <li className="menu__item"><a href="manager/index">Менеджеры</a></li>
+            <li className="menu__item"><a href="/manager">Менеджеры</a></li>
         </ul>;
     }
 }
@@ -31,7 +31,7 @@ class RightBlock extends React.Component {
     }
     render() {
         return <div className="rightBlock">
-            <ToDoMain url={this.props.url} />
+            <ToDoMain {...this.props}  />
         </div>
     }
 }
@@ -42,7 +42,7 @@ class Main extends React.Component {
     render() {
         return <div className="main">
             <LeftBlock />
-            <RightBlock url={this.props.url} />
+            <RightBlock {...this.props} />
         </div>
     }
 }

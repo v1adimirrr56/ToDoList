@@ -1,1 +1,8 @@
 ﻿<script src="@Url.Content("~/Content/Scripts/React/ToDo/Task.jsx")"></script>
+<script type="text/javascript">
+    ReactDOM.render(
+        React.createElement(Main, {url: "@Url.Action("GetTasks", "Task")"}, null),
+        document.getElementById('root'),
+    );
+</script>
+

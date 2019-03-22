@@ -47,5 +47,3 @@ class ToDoMain extends React.Component {
                </div>
     }
 }
-
-ReactDOM.render(<Main />, document.getElementById('root'));

@@ -15,12 +15,12 @@ namespace ToDo.WebUI
 
             routes.MapRoute(
                name: "Task",
-               url: "task/{action}",
-               defaults: new { controller = "Task", action = "Index" }
+               url: "task/{action}/{id}",
+               defaults: new { controller = "Task", action = "Index", id = UrlParameter.Optional }
             );
             routes.MapRoute(
                name: "Manager",
-               url: "manager/{action}",
+               url: "manager",
                defaults: new { controller = "Manager", action = "Index" }
             );
 

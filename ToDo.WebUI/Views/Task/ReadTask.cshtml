@@ -1,0 +1,10 @@
+﻿@model ToDo.WebUI.Models.ToDo.TaskViewModel
+
+<script src="@Url.Content("~/Content/Scripts/React/ToDo/ReadTask.jsx")"></script>
+<script type="text/javascript">
+    ReactDOM.render(
+        React.createElement(Main, { taskId: @Model.Id, url: "@Url.Action("GetTask", "Task")", allManager: "@Url.Action("GetManagers", "Manager")"}, null),
+        document.getElementById('root'),
+    );
+</script>
+

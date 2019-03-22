@@ -3,7 +3,7 @@
         super(props);
     }
     render() {
-        return "IM" + this.props.Id;
+        return this.props.Id;
     }
 }
 
@@ -12,7 +12,8 @@ class CommonLink extends React.Component {
         super(props);
     }
     render() {
-        return <a href="task/index" className="commonLink">{this.props.children}</a>
+        const { href } = this.props
+        return <a href={href} className="commonLink">{this.props.children}</a>
     }
 }
 
@@ -32,9 +33,14 @@ class CommonInput extends React.Component {
 class BtnPrimary extends React.Component {
     constructor(props){
         super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick()
+    {
+        this.props.onClick();
     }
     render() {
-        return  <div className={`btnPrimary ${this.props.className}`}> 
+        return  <div onClick={this.handleClick} className={`btnPrimary ${this.props.className}`}> 
                     {this.props.btnText}
                 </div>
     }
