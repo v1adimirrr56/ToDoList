@@ -1,9 +1,17 @@
-class ToDo extends React.Component {
+class ToDoMain extends React.Component {
+    constructor(props)
+    {
+        super(props);
+    }
     render() {
-        return (
-            <div className="toDo">ToDo will be here</div>
-        );
+        return <div className="toDoMain">
+                    <ToDoTable tableHeader={ToDoTask.header} fieldObject={ToDoTask.fieldObject} url={this.props.url} />
+                    <PaginationBlock/>
+               </div>
     }
 }
 
-ReactDOM.render(<ToDo />, document.getElementById('root'));
+const ToDoTask = {
+    header:["Номер","Заголовок", "Дата создания","Нормативное время устранения", "Менеджер"],
+    fieldObject:["Id", "Title","CreateTime", "NormResolutionTime", "Manager"]
+};

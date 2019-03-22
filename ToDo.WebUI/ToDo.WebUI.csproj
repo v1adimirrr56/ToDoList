@@ -134,9 +134,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\CSS\ToDo.css" />
     <Content Include="Content\Scripts\React\React-dom-dev.js" />
     <Content Include="Content\Scripts\React\React-dev.js" />
+    <Content Include="Content\Scripts\React\ToDo\Layout.jsx" />
+    <Content Include="Content\Scripts\React\ToDo\Manager.jsx" />
+    <Content Include="Content\Scripts\React\ToDo\Task.jsx" />
     <Content Include="Content\Scripts\React\ToDo\ToDo.jsx" />
+    <Content Include="Content\Scripts\React\ToDo\ToDoTable.jsx" />
+    <Content Include="Content\Scripts\React\ToDo\Utils.jsx" />
     <Content Include="Global.asax" />
     <Content Include="readme.txt" />
     <Content Include="Web.config" />
@@ -145,10 +151,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\ReactConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ManagerController.cs" />
+    <Compile Include="Controllers\TaskController.cs" />
     <Compile Include="Controllers\ToDoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ToDo\TaskViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +166,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\ToDo\Index.cshtml" />
+    <Content Include="Views\Task\Index.cshtml" />
+    <Content Include="Views\Manager\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -166,7 +177,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
