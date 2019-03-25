@@ -3,3 +3,4 @@ C:\Users\Александр\source\repos\ToDo\ToDo.Domain\bin\Debug\ToDo.Domain.
 C:\Users\Александр\source\repos\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.csproj.CoreCompileInputs.cache
 C:\Users\Александр\source\repos\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.dll
 C:\Users\Александр\source\repos\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.pdb
+C:\Users\Александр\source\repos\ToDo\ToDo.Domain\obj\Debug\ToDo.Domain.csprojAssemblyReference.cache

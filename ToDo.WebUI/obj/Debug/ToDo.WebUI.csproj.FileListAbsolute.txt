@@ -105,4 +105,3 @@ C:\Users\Александр\source\repos\ToDo\ToDo.WebUI\bin\x64\v8-x64.dll
 C:\Users\Александр\source\repos\ToDo\ToDo.WebUI\bin\x86\ClearScriptV8-32.dll
 C:\Users\Александр\source\repos\ToDo\ToDo.WebUI\bin\x86\v8-base-ia32.dll
 C:\Users\Александр\source\repos\ToDo\ToDo.WebUI\bin\x86\v8-ia32.dll
-C:\Users\Александр\source\repos\ToDo\ToDo.WebUI\obj\Debug\ToDo.WebUI.csprojAssemblyReference.cache

@@ -14,3 +14,4 @@ C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitT
 C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.csproj.CopyComplete
 C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.dll
 C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.pdb
+C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.csprojAssemblyReference.cache

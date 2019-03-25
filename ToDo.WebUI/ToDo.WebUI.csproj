@@ -136,6 +136,7 @@
   <ItemGroup>
     <Content Include="Content\CSS\ToDo.css" />
     <Content Include="Content\Scripts\React\bundle.js" />
+    <Content Include="Content\Scripts\React\ToDo\History.js" />
     <Content Include="Content\Scripts\React\ToDo\Layout.jsx" />
     <Content Include="Content\Scripts\React\ToDo\ToDoManager.jsx" />
     <Content Include="Content\Scripts\React\ToDo\MappingTable.jsx" />
