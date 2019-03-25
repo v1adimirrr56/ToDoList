@@ -10,7 +10,6 @@ C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\Microsoft.
 C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.csprojAssemblyReference.cache
 C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.csproj.CoreCompileInputs.cache
 C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.csproj.CopyComplete
 C:\Users\Александр\source\repos\ToDo\ToDo.UnitTest\obj\Debug\ToDo.UnitTest.dll

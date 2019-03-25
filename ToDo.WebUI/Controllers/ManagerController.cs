@@ -9,6 +9,7 @@ using ToDo.WebUI.Models.ToDo;
 
 namespace ToDo.WebUI.Controllers
 {
+    [RoutePrefix("Manager")]
     public class ManagerController : Controller
     {
         public static List<ManagerViewModel> mvm = new List<ManagerViewModel>
@@ -38,10 +39,6 @@ namespace ToDo.WebUI.Controllers
                 Position = "Manager"
             }
         };
-        public ActionResult Index()
-        {
-            return View();
-        }
         [HttpGet]
         [OutputCache(Location = OutputCacheLocation.None)]
         public JsonResult GetManager(int? id)
@@ -55,6 +52,7 @@ namespace ToDo.WebUI.Controllers
         }
         [HttpGet]
         [OutputCache(Location = OutputCacheLocation.None)]
+        [Route("GetManagers")]
         public JsonResult GetManagers()
         {
             return Json(JsonConvert.SerializeObject(mvm), JsonRequestBehavior.AllowGet);

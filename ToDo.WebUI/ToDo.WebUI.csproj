@@ -135,17 +135,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\CSS\ToDo.css" />
-    <Content Include="Content\Scripts\React\React-dom-dev.js" />
-    <Content Include="Content\Scripts\React\React-dev.js" />
+    <Content Include="Content\Scripts\React\bundle.js" />
     <Content Include="Content\Scripts\React\ToDo\Layout.jsx" />
-    <Content Include="Content\Scripts\React\ToDo\Manager.jsx" />
+    <Content Include="Content\Scripts\React\ToDo\ToDoManager.jsx" />
+    <Content Include="Content\Scripts\React\ToDo\MappingTable.jsx" />
+    <Content Include="Content\Scripts\React\ToDo\ReadManager.jsx" />
+    <Content Include="Content\Scripts\React\ToDo\ToDoIndex.jsx" />
+    <Content Include="Content\Scripts\React\ToDo\ToDoRead.jsx" />
     <Content Include="Content\Scripts\React\ToDo\Task.jsx" />
-    <Content Include="Content\Scripts\React\ToDo\ToDo.jsx" />
+    <Content Include="Content\Scripts\React\ToDo\ToDoReadManager.jsx" />
+    <Content Include="Content\Scripts\React\ToDo\ToDoReadTask.jsx" />
     <Content Include="Content\Scripts\React\ToDo\ToDoTable.jsx" />
     <Content Include="Content\Scripts\React\ToDo\Utils.jsx" />
     <Content Include="Global.asax" />
     <Content Include="readme.txt" />
     <Content Include="Web.config" />
+    <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -157,19 +162,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ToDo\DateTimeConverter.cs" />
     <Compile Include="Models\ToDo\ManagerViewModel.cs" />
     <Compile Include="Models\ToDo\TaskViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="package.json" />
+    <Content Include=".babelrc" />
+    <Content Include=".npmrc" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\ToDo\Index.cshtml" />
-    <Content Include="Views\Task\Index.cshtml" />
-    <Content Include="Views\Manager\Index.cshtml" />
-    <Content Include="Views\Task\ReadTask.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -179,6 +185,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Manager\" />
+    <Folder Include="Views\Task\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

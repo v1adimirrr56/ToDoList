@@ -11,16 +11,7 @@ namespace ToDo.WebUI.App_Start
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/react-dev")
-                .Include(
-                    "~/Content/Scripts/React/React-dom-dev.js",
-                    "~/Content/Scripts/React/React-dev.js"
-                    ));
 
-            bundles.Add(new BabelBundle("~/bundles/ToDo")
-                .Include("~/Content/Scripts/React/ToDo/ToDo.jsx"));
-
-            BundleTable.EnableOptimizations = true;
         }
     }
 }

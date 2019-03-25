@@ -11,22 +11,11 @@ namespace ToDo.WebUI
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRoute(
-               name: "Task",
-               url: "task/{action}/{id}",
-               defaults: new { controller = "Task", action = "Index", id = UrlParameter.Optional }
-            );
-            routes.MapRoute(
-               name: "Manager",
-               url: "manager",
-               defaults: new { controller = "Manager", action = "Index" }
-            );
+            routes.MapMvcAttributeRoutes();
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
+                url: "{*anything}",
                 defaults: new { controller = "ToDo", action = "Index", id = UrlParameter.Optional }
             );
         }

@@ -1,21 +1,8 @@
-﻿class ToDoTable extends React.Component {
-    constructor(props)
-    {
-        super(props);
-    }
-    render() {
-        if(this.props.choosingTable)
-        {
-            return <ChoosingTable {...this.props} />
-        }
-        else
-        {
-            return <DisplayTable {...this.props} />
-        }
-    }
-}
+﻿import React, { Component } from 'react';
+import { CommonLink, IDTask  } from './Utils';
+import { Link } from 'react-router-dom';
 
-class DisplayTable extends React.Component
+class DisplayTable extends Component
 {
     constructor(props)
     {
@@ -27,8 +14,8 @@ class DisplayTable extends React.Component
         const xhr = new XMLHttpRequest();
         xhr.open('GET',this.props.url, true);
         xhr.onload = () => {
-            const data = JSON.parse(xhr.responseText);
-            this.setState({ toDoItems : JSON.parse(data) });
+            const data = JSON.parse(JSON.parse(xhr.responseText));
+            this.setState({ toDoItems : data });
         };
         xhr.send();
     }
@@ -43,7 +30,7 @@ class DisplayTable extends React.Component
                             }
                             else if(field === "Id")
                             {
-                                return <td key={subindex} className="toDoList__row__item"> <CommonLink href={`${urlOneObj}/${row[field]}`} ><IDTask Id={row[field]} /></CommonLink>  </td>
+                                return <td key={subindex} className="toDoList__row__item"> <Link to={`${urlOneObj}/${row[field]}`} ><IDTask Id={row[field]} /></Link>  </td>
                             }
                             else
                             {
@@ -72,26 +59,26 @@ class DisplayTable extends React.Component
         );
     }
 }
-class ChoosingTable extends React.Component
+class ChoosingTable extends Component
 {
     constructor(props)
     {
         super(props);
         this.state = { toDoItems : []};
         this.handleClick = this.handleClick.bind(this);
-        console.log(props)
     }
     handleClick(managerRow, e)
     {
         const xhr = new XMLHttpRequest();
-        xhr.open('post', '/task/AddManagerTask/?id=' + this.props.taskId + '&manager=' + managerRow.FirstName, true);
+        xhr.open('post', this.props.postTask + '?id=' + this.props.id + '&manager=' + managerRow.FirstName, true);
         xhr.send(managerRow);
+        this.props.loadAllManager();
         this.props.toggleManagerList();
     }
     componentDidMount()
     {
         const xhr = new XMLHttpRequest();
-        xhr.open('GET',this.props.url, true);
+        xhr.open('GET',this.props.relatedObjUrl, true);
         xhr.onload = () => {
             const data = JSON.parse(xhr.responseText);
             this.setState({ toDoItems : JSON.parse(data) });
@@ -99,7 +86,7 @@ class ChoosingTable extends React.Component
         xhr.send();
     }
     render() {
-        const { tableHeader, fieldObject, urlOneObj} = this.props;
+        const { tableHeader, fieldObject} = this.props;
         const { toDoItems } = this.state;
         const items = toDoItems.map((row, index) => {
             const fields = fieldObject.map((field, subindex) => {
@@ -134,3 +121,8 @@ class ChoosingTable extends React.Component
         );
     }
 }
+
+export {
+    DisplayTable,
+    ChoosingTable,
+  }

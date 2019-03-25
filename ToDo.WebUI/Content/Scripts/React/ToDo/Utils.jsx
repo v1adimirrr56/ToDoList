@@ -1,4 +1,6 @@
-﻿class IDTask extends React.Component {
+﻿import React, { Component } from 'react';
+
+class IDTask extends Component {
     constructor(props) {
         super(props);
     }
@@ -7,7 +9,7 @@
     }
 }
 
-class CommonLink extends React.Component {
+class CommonLink extends Component {
     constructor(props){
         super(props);
     }
@@ -18,7 +20,7 @@ class CommonLink extends React.Component {
 }
 
 
-class CommonInput extends React.Component {
+class CommonInput extends Component {
     constructor(props){
         super(props);
     }
@@ -30,7 +32,7 @@ class CommonInput extends React.Component {
     }
 }
 
-class BtnPrimary extends React.Component {
+class BtnPrimary extends Component {
     constructor(props){
         super(props);
         this.handleClick = this.handleClick.bind(this);
@@ -61,4 +63,10 @@ function GetDateStr(dateTime)
         return time;
     }
     return;
+}
+
+export {
+    CommonLink,
+    IDTask,
+    BtnPrimary
 }

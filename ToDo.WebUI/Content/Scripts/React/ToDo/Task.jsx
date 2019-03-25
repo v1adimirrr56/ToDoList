@@ -1,11 +1,3 @@
-const taskList = [
-    {Id : 1, Title : "Loream ipsam", 
-    CreateTime : new Date().getTime(), 
-    NormResolutionTime : "Norm time", 
-    Manager : "Manager"},
-];
-
-
 class TaskMain extends React.Component {
     render() {
         return  <div className="taskMain">

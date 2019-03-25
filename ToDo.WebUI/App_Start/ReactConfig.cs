@@ -12,6 +12,7 @@ namespace ToDo.WebUI
 		{
             JsEngineSwitcher.Current.DefaultEngineName = V8JsEngine.EngineName;
             JsEngineSwitcher.Current.EngineFactories.AddV8();
+
         }
     }
 }

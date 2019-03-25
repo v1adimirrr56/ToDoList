@@ -11,7 +11,9 @@ namespace ToDo.WebUI.Models.ToDo
     {
         public int Id { get; set; }
         public string Title { get; set; }
+        [JsonConverter(typeof(DateTimeConverter))]
         public DateTime CreateTime { get; set; }
+        [JsonConverter(typeof(DateTimeConverter))]
         public DateTime NormResolutionTime { get; set; }
         public string Manager { get; set; }
     }
